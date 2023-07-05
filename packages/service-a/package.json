@@ -1,10 +1,10 @@
 {
-  "name": "test-service",
+  "name": "test-service-a",
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "redis": "4.6.5",
+    "redis": "4.6.6",
     "test-utility": "0.0.1"
   },
   "devDependencies": {
