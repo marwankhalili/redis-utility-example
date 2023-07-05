@@ -1,0 +1,13 @@
+{
+  "name": "test-service",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "redis": "4.6.5",
+    "test-utility": "0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
