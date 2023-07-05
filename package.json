@@ -4,13 +4,8 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules packages/*/node_modules packages/*/dist",
-    "setup": "npm run clean && npm i && npm run build:utility && npm run build:service-a && npm run build:service-b",
-    "p:setup": "pnpm run clean && pnpm i && pnpm run build:utility && pnpm run build:service-a && pnpm run build:service-b",
-    "build:utility": "npm run build --workspace=test-utility",
-    "build:service-a": "npm run build --workspace=test-service-a",
-    "build:service-b": "npm run build --workspace=test-service-b",
-    "p:build:utility": "pnpm run build --workspace=test-utility",
-    "p:build:service-a": "pnpm run build --workspace=test-service-a",
-    "p:build:service-b": "pnpm run build --workspace=test-service-b"
+    "setup:npm": "npm run clean && npm i && npm run build",
+    "setup:pnpm": "pnpm run clean && pnpm i && pnpm run build",
+    "build": "npm run build --workspace=test-utility && npm run build --workspace=test-service-a && npm run build --workspace=test-service-b"
   }
 }

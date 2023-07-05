@@ -4,5 +4,5 @@ import { example } from "test-utility";
 export async function main() {
   const client = createClient();
   await client.connect();
-  example(client);
+  await example(client);
 }
